@@ -6,45 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 1</title>
     <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- ICON -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <div class="wrapper headerFlex">
+    <header class="">
+        <div class="wrapper headerContainer">
             <!-- Navigation Section -->
-            <nav>
+            <nav class="navTop">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </nav>
             <div class="header">
-                <h1>Galass Handbags</h1>
-                <img src="./assets/group-bags.png" alt="Nice three bags">
+                <div class="h1Container">
+                    <h1>Galass <span>Handbags</span></h1>
+                </div>
+                
+                <div class="imgHeader">
+                    <img src="./assets/group-bags.png" alt="Nice three bags">
+                </div>
+                
             </div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank"><span class="iconify" data-icon="akar-icons:instagram-fill"></span></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><span class="iconify" data-icon="brandico:facebook"></span></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><span class="iconify" data-icon="akar-icons:twitter-fill"></span></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><span class="iconify" data-icon="akar-icons:snapchat-fill"></span></a></li>
+                </ul>
+            </div> <!--End .social-->
             
         </div><!--End Wrapper-->
-        <div class="social">
-            <ul>
-                <li><a href="https://instagram.com"></a></li>
-                <li><a href="https://facebook.com"></a></li>
-                <li><a href="https://"></a></li>
-                <li><a href="https://twiter.com"></a></li>
-            </ul>
-        </div> <!--End .social-->         
+                 
     </header>
     <!-- Main Section -->
     <main>
         <section class="handCrafted">
-            <div class="wrapper">
+            <div class="wrapper handCraftedFlex">
                 <!-- img Container -->
                 <article class="imgContainer">
-                    <img src="./assets/square-photo.jpg" alt="Nice Green bag with brown strap">
+                    
                 </article><!--End .imgContainer-->
                 <!-- Text Container -->
                 <article class="textContainer">
                     <h2>Hand Crafted</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis enim ex delectus eaque omnis quibusdam quo, laudantium ducimus? Praesentium, reprehenderit nulla fugiat, similique iusto maxime ducimus doloremque harum quaerat amet sunt quam iure voluptas dolorum et numquam at, fugit mollitia eius ratione cum repellat. Cupiditate similique vero dignissimos id non, neque commodi necessitatibus asperiores nisi reprehenderit hic ullam quisquam recusandae delectus consectetur quos esse fuga. Veniam, ipsam?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis enim ex delectus eaque omnis quibusdam quo, laudantium ducimus? Praesentium, reprehenderit nulla fugiat, similique iusto maxime ducimus doloremque harum quaerat amet sunt quam iure voluptas dolorum et numquam at, fugit mollitia eius ratione cum repellat. </p>
 
                     <button>Read More</button>
 
@@ -72,14 +82,17 @@
         <!-- Info Section -->
         <section class="info">
             <div class="wrapper">
-                <ul>
-                    <li>
+                <ul class="infoFlex">
+                    <li><a href="https://www.instagram.com" target="_blank"><span class="iconify" data-icon="dashicons:format-gallery"  flip="horizontal"></span></a>
                         <p>Catalogue</p>
                     </li>
+                    
                     <li>
+                        <li><a href="https://www.instagram.com" target="_blank"><span class="iconify" data-icon="bx:calendar"  flip="horizontal"></span></a>
                         <p>Event</p>
                     </li>
                     <li>
+                        <li><a href="https://www.instagram.com" target="_blank"><span class="iconify" data-icon="fa6-regular:handshake"  flip="horizontal"></span></a>
                         <p>Collaborations</p>
                     </li>
                 </ul>
@@ -88,63 +101,84 @@
 
         </section><!--End .info-->
 
-        <!-- Fall Trends Section -->
+        <!-- Fall Trends left Section -->
         <section class="fallTrends">
-            <div class=" wrapper fallTrendsText">
-                <h2>Fall Trends</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis, sed quae laudantium fuga, aspernatur ducimus est explicabo ex reprehenderit dolor modi magnam porro molestiae nemo at consectetur enim nihil voluptatem doloribus! Velit nulla optio iusto.</p>
+            <div class="fallTrendsLeft">
+                <div class=" wrapper fallTrendsText">
+                    <h2>Fall Trends</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis, sed quae laudantium fuga, aspernatur ducimus est explicabo ex reprehenderit dolor modi magnam porro molestiae nemo at consectetur enim nihil voluptatem doloribus! Velit nulla optio iusto.</p>
 
-                <button>read more</button>
+                    <button>read more</button>
 
-            </div><!--End .wrapper-->
+                </div><!--End .wrapper-->
 
-            <div class="bgFallTrends">
+                
+            </div><!--End Fall Trends Left Section-->
 
-            </div>
-        </section><!--End Fall Trends Section-->
+            <div class="fallTrendsRight">
+                
+            </div><!--End Fall Trends Right Section-->
+        </section>
 
+        <!-- VEGAN LEATHER SECTION -->
         <section class="veganLeather">
 
-            <div class="bgVeganLeather">
+            <div class="veganLeatherLeft">
 
             </div>
 
-            <div class="wrapper veganLeatherText">
-                <h2>Vegan Leather</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis, sed quae laudantium fuga, aspernatur ducimus est explicabo ex reprehenderit dolor modi magnam porro molestiae nemo at consectetur enim nihil voluptatem doloribus! Velit nulla optio iusto.</p>
+            <div class="veganLeatherRight">
+                <div class=" wrapper veganLeatherText">
+                    <h2>Vegan Leather</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt debitis, sed quae laudantium fuga, aspernatur ducimus est explicabo ex reprehenderit dolor modi magnam porro molestiae nemo at consectetur enim nihil voluptatem doloribus! Velit nulla optio iusto.</p>
 
-                <button>read more</button>
+                    <button>read more</button>
 
-            </div><!--End .wrapper-->
+                </div><!--End .wrapper-->
+
+                
+            </div><!--End Vegan Leather Right Section-->
 
         </section><!--End Vegan Leather Section-->
 
         <!-- Stay Updated Section -->
         <section class="stayUpdated">
-            <div class="wrapper">
-                <h2>Stay updated</h2>
-                <!-- Nav Bottom Section -->
-                <article class="navBottom">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </article><!--End .navBottom-->
+            <div class="wrapper">               
+                    <div class="footerInfo">
+                    <!-- Nav Bottom Section -->
+                        <article class="navBottom">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </article><!--End .navBottom-->
 
-                <!-- Sebscribe Section -->
-                <article class="subscribe">
+                        <!-- Sebscribe Section -->
+                        <form action="#" method="post" class="subscribe">
 
-                </article><!--End Subscribe Section-->
+                            <h2>Stay updated</h2>
 
-                <!-- Contact Section -->
-                <ul>
-                    <li>info@email.com | 123-456-7890</li>
-                    <li>123 some road, Toronto, ON</li>
-                    <li>A</li>
-                </ul>
+                            <label for="subscribe">Subscribe to our newsletter to stay updated</label>
+                            <div class="inline">
+                            <input type="text" id="subscribe"
+                            name="subscribe">
+                            <button>subscribe</button>
+                        </div>
+                        </form><!--End Subscribe Section-->
 
+                        <!-- Contact Section -->
+                        <div class="contact">
+                            <h2>Contact</h2>
+                            <ul>
+                                <li>info@email.com | 123-456-7890</li>
+                                <li>123 some road, Toronto, ON</li>
+                                <li>A5A 5A5, Canada</li>
+                            </ul>
+                    </div><!--End .contact-->
+
+                    </div><!--End .footerInfo-->
             </div><!--End Wrapper-->
 
         </section><!--End Stay Updated Section-->

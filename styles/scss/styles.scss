@@ -1,2 +1,367 @@
 @use "setup";
+// GOOGLE FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Roboto:wght@300;400&display=swap');
+
+//font-family: 'Petit Formal Script', cursive;
+
+//font-family: 'Roboto', sans-serif;
+
+
+// FONTS VARIABLES
+$generalFont: 'Roboto', sans-serif;
+$headingsButtonsFont: 'Petit Formal Script', cursive;
+
+// COLORS VARIABLES
+$bgBrown: #815600;
+$bgHardRed: #500801;
+$footerBg: #1D0303;
+$white: #FFFFFF;
+
+// GENERAL STYLE
+html {
+    font-size: 125%;
+    background-color: $footerBg;
+}
+body {
+    font-family: $generalFont;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 29px;
+    letter-spacing: 0.2px;
+    color: $white;
+}
+h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-family: $headingsButtonsFont;
+    font-size: 54px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+ 
+
+//  BUTTONS
+button {
+    font-family: $headingsButtonsFont;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    text-transform: lowercase;
+    background-color: $footerBg;
+    color: $white;
+    border: none;
+    padding: 8px 17px;
+}
+
+// HEADER SECTION
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: $bgBrown;
+}
+
+.navTop {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 10px 0;
+    li {
+         a {
+            display: inline-block;
+             padding: 10px 35px 10px 0;
+             font-size: 0.9rem;
+         }
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .h1Container {
+        width: 50%;
+        outline: 1px solid blue;
+        margin-right: 10px;
+        h1 {
+            font-family: $headingsButtonsFont;
+            font-size: 4.5rem;
+            font-weight: 400;
+            line-height: 94.3px;
+            text-align: right;     
+        }
+        span {
+            display: block;
+        }
+        
+    }
+
+    .imgHeader {
+        width: 50%;
+        height: auto;
+        outline: 1px solid blue;
+        position: relative;
+        top: -40px;
+        right: -30px;
+    }
+    
+    
+}
+// SOCIAL MEDIA ICONS
+.headerContainer {
+    position: relative;
+    .social {
+        position: absolute;
+        right: -95px;
+        bottom: 65px;
+        font-size: 1.2rem;
+        li {
+            padding-top: 7px;
+            text-align: center;
+        }
+    }
+}
+// HAND CRAFTED SECTION
+.handCrafted {
+    background-color: $bgHardRed;
+    padding: 70px;
+
+    .handCraftedFlex {
+        display: flex;
+        justify-content: space-between;
+
+        .imgContainer {
+            background-image: url(../../assets/square-photo.jpg);
+            background-size: cover;
+            display: flex;
+            width: 25%;
+            margin-right: 35px;
+            
+        }
+        .textContainer {
+            width: 77%;
+            h2 {
+                padding-top: 10px;
+            }
+            p {
+               margin: 40px 0; 
+            }
+
+           
+        }
+    }
+}
+
+// LATEST COLLECTION SECTION
+.latestCollection {
+    background-color: $bgBrown;
+    padding: 70px;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            width: 31%;
+            padding: 40px 0px 0;
+        }
+    }
+}
+
+// INFO SECTION
+.info {
+    background-color: $bgHardRed;
+    padding: 70px;
+    
+    .infoFlex {
+        width: 78%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+        li {
+            width: 31%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+
+            a {
+                font-size: 3rem;
+                padding: 10px;
+            }
+
+            p {
+                font-family: $headingsButtonsFont;
+                font-size: 1.5rem;
+            }
+
+        }
+    }
+
+}
+
+// FALL TRENDS SECTION
+.fallTrends {
+    display: flex;
+    .fallTrendsLeft {
+        width: 50%;
+        background-color: $bgBrown;
+        padding: 100px 0;
+
+        p {
+            margin: 40px 0;
+        }
+    }
+    .fallTrendsRight {
+        width: 50%;
+        background-image: url(../../assets/right-photo.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+// VEGAN LEATHER SECTION
+.veganLeather {
+    display: flex;
+
+    .veganLeatherLeft {
+        width: 50%;
+        background-image: url(../../assets/left-photo.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .veganLeatherRight {
+        width: 50%;
+        background-color: $bgBrown;
+        padding: 100px 0;
+
+        p {
+            margin: 40px 0;
+        }
+    }
+}
+
+// STAY UPDATED SECTION
+.stayUpdated {
+    background-color: $bgHardRed;
+    padding: 100px 0;
+   
+    .footerInfo {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-bottom: 10px;
+
+        .navBottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 30%;
+            font-family: $generalFont;
+            line-height: 29px;
+            font-weight: 400;
+            text-transform: lowercase;
+
+            ul {
+                width: 100%;
+
+
+            }
+           
+        }
+
+        form {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            
+            h2 {
+                text-align: center;
+                padding-bottom:50px;
+            }
+
+            label {
+                text-align: center;
+                padding-bottom: 10px;
+            }
+
+            .inline {
+                display: flex;
+                input {                
+                width: 100%;
+                }
+            }
+            
+        }
+
+        .contact {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            // padding-top: 40px;
+
+            h2 {
+                text-align: right;
+                font-style: $headingsButtonsFont;
+                font-size: 45px;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                li {
+                    padding-top: 5px;
+                }
+            }
+        }
+
+    }
+    
+        
+}
+
+// FOOTER SECTION
+footer {
+    background-color: $footerBg;
+    
+    p {
+        text-align: center;
+        padding: 8px 0 15px;
+    }
+}
+
 
