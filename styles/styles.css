@@ -682,8 +682,6 @@ footer p {
     width: 75%;
   }
 }
-/* 1200px and under
-  ******************************************************/
 @media (max-width: 1200px) {
   .header .h1Container h1 {
     font-size: 3.7rem;
@@ -692,8 +690,6 @@ footer p {
     min-width: 500px;
   }
 }
-/* 1080px and under
-  ******************************************************/
 @media (max-width: 1080px) {
   .wrapper {
     width: 90%;
@@ -735,8 +731,6 @@ footer p {
     font-size: 0.8rem;
   }
 }
-/* 900px and under
-  ******************************************************/
 @media (max-width: 900px) {
   .wrapper {
     width: 95%;
@@ -762,8 +756,6 @@ footer p {
     font-size: 0.76rem;
   }
 }
-/* 768px and under
-  ******************************************************/
 @media (max-width: 768px) {
   .wrapper {
     width: 95%;
@@ -952,8 +944,6 @@ footer p {
             align-items: center;
   }
 }
-/* 600px and under
-  ******************************************************/
 @media (max-width: 600px) {
   h2 {
     font-size: 2rem;
@@ -970,8 +960,6 @@ footer p {
     font-size: 0.9rem;
   }
 }
-/* 490px and under
- ******************************************************/
 @media (max-width: 490px) {
   h2 {
     font-size: 1.7rem;
