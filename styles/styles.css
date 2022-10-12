@@ -321,7 +321,7 @@ header {
           justify-content: space-between;
 }
 .header .h1Container {
-  width: 50%;
+  width: 45%;
   margin-right: 10px;
 }
 .header .h1Container h1 {
@@ -335,7 +335,7 @@ header {
   width: 50%;
   position: relative;
   top: -40px;
-  right: -30px;
+  right: 10px;
 }
 .header .imgHeader img {
   width: 100%;
@@ -474,14 +474,14 @@ header {
 }
 .fallTrends .bgSection1 .fallTrendsLeft {
   width: 50%;
-  height: 70vh;
+  height: 80vh;
   background-color: #815600;
   padding: 100px 0;
 }
 .fallTrends .bgSection1 .fallTrendsRight {
   width: 50%;
-  height: 70vh;
-  background-image: url(../../assets/right-photo.jpg);
+  height: 80vh;
+  background-image: url(../assets/right-photo.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -520,14 +520,14 @@ header {
 }
 .veganLeather .bgSection2 .veganLeatherLeft {
   width: 50%;
-  height: 70vh;
-  background-image: url(../../assets/left-photo.jpg);
+  height: 80vh;
+  background-image: url(../assets/left-photo.jpg);
   background-size: cover;
   background-position: center;
 }
 .veganLeather .bgSection2 .veganLeatherRight {
   width: 50%;
-  height: 70vh;
+  height: 80vh;
   background-color: #815600;
   padding: 100px 0;
 }
@@ -689,6 +689,12 @@ footer p {
   .headerContainer .imgHeader {
     min-width: 500px;
   }
+  .fallTrends .wrapper .fallTrendsText {
+    bottom: 15px;
+  }
+  .fallTrends .wrapper .fallTrendsText p {
+    margin: 20px 0;
+  }
 }
 @media (max-width: 1080px) {
   .wrapper {
@@ -700,11 +706,14 @@ footer p {
   button {
     width: 180px;
   }
+  .header .h1Container {
+    width: 40%;
+  }
   .header .h1Container h1 {
     font-size: 3rem;
   }
   .headerContainer .social {
-    right: -65px;
+    right: -35px;
   }
   .headerContainer .imgHeader {
     min-width: 420px;
@@ -727,6 +736,18 @@ footer p {
   .handCrafted .handCraftedFlex .textContainer p {
     margin: 20px 0;
   }
+  .fallTrends .wrapper .fallTrendsText {
+    bottom: 40px;
+  }
+  .fallTrends .wrapper .fallTrendsText p {
+    margin: 30px 0;
+  }
+  .veganLeather .wrapper .veganLeatherText {
+    bottom: 40px;
+  }
+  .veganLeather .wrapper .veganLeatherText p {
+    margin: 30px 0;
+  }
   .stayUpdated .footerInfo .contact ul li {
     font-size: 0.8rem;
   }
@@ -736,13 +757,13 @@ footer p {
     width: 95%;
   }
   .header .h1Container {
-    min-width: 250px;
+    width: 40%;
   }
   .header .h1Container h1 {
-    font-size: 2.7rem;
+    font-size: 2.6rem;
   }
   .headerContainer .social {
-    right: -55px;
+    right: -15px;
   }
   .headerContainer .imgHeader {
     min-width: 380px;
@@ -751,6 +772,12 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .fallTrends .wrapper .fallTrendsText p {
+    margin: 20px 0;
+  }
+  .veganLeather .wrapper .veganLeatherText p {
+    margin: 20px 0;
   }
   .stayUpdated .footerInfo .contact ul li {
     font-size: 0.76rem;
@@ -777,13 +804,16 @@ footer p {
         align-self: flex-end;
     width: 100%;
   }
+  .header .h1Container h1 {
+    line-height: 70px;
+  }
   .header .h1Container span {
     display: block;
   }
   .header .imgHeader {
     width: 60%;
-    min-width: 450px;
-    position: unset;
+    min-width: 405px;
+    top: -110px;
   }
   .headerContainer .social {
     display: none;
@@ -952,9 +982,10 @@ footer p {
     font-size: 0.9rem;
   }
   .header .imgHeader {
-    width: 70%;
-    top: 0px;
-    left: 0px;
+    width: 60%;
+    min-width: 350px;
+    top: -15px;
+    left: -35px;
   }
   footer p {
     font-size: 0.9rem;
@@ -974,8 +1005,10 @@ footer p {
     font-size: 2.3rem;
   }
   .header .imgHeader {
-    width: 100%;
+    width: 75%;
     min-width: 320px;
+    top: -10px;
+    left: -15px;
   }
   footer p {
     font-size: 0.7rem;

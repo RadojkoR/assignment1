@@ -101,7 +101,7 @@ header {
     justify-content: space-between;
     
     .h1Container {
-        width: 50%;
+        width: 45%;
         // outline: 1px solid blue;
         margin-right: 10px;
         h1 {
@@ -119,7 +119,7 @@ header {
         // outline: 1px solid blue;
         position: relative;
         top: -40px;
-        right: -30px;
+        right: 10px;
         img {
             width: 100%;
         }
@@ -242,15 +242,15 @@ header {
         display: flex;
         .fallTrendsLeft {
             width: 50%;
-            height: 70vh;
+            height: 80vh;
             background-color: $bgBrown;
             padding: 100px 0;    
             
         }
         .fallTrendsRight {
             width: 50%;
-            height: 70vh;
-            background-image: url(../../assets/right-photo.jpg);
+            height: 80vh;
+            background-image: url(../assets/right-photo.jpg);
             background-size: cover;
             background-position: center;
         }
@@ -282,15 +282,15 @@ header {
 
         .veganLeatherLeft {
             width: 50%;
-            height: 70vh;
-            background-image: url(../../assets/left-photo.jpg);
+            height: 80vh;
+            background-image: url(../assets/left-photo.jpg);
             background-size: cover;
             background-position: center;
         }
 
         .veganLeatherRight {
             width: 50%;
-            height: 70vh;
+            height: 80vh;
             background-color: $bgBrown;
             padding: 100px 0;
           
@@ -448,6 +448,16 @@ footer {
      .headerContainer .imgHeader {
         min-width: 500px;
     }
+
+    .fallTrends .wrapper {
+        .fallTrendsText {
+            bottom: 15px;
+    
+            p {
+                margin: 20px 0;
+            }
+        }
+    }
  }
 // 1080px and under***********************************
   
@@ -466,12 +476,20 @@ footer {
     }
 
     // HEADER SECTION
-    .header .h1Container h1 {
-         font-size: 3rem;
-     }
+    .header {
+        .h1Container {
+            width: 40%;
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+        
+        
+    }
 
     .headerContainer .social {
-        right: -65px;
+        right: -35px;
      }
 
      .headerContainer .imgHeader {
@@ -501,6 +519,27 @@ footer {
         }
     }
 
+    .fallTrends .wrapper {
+        .fallTrendsText {
+            bottom: 40px;
+    
+            p {
+                margin: 30px 0;
+            }
+        }
+    }
+
+    // VEGAN LEATHER SECTION
+.veganLeather .wrapper {
+    .veganLeatherText {
+        bottom: 40px;
+
+        p {
+            margin: 30px 0;
+        }
+    }
+}
+
     // STAY UPDATED SECTION
     .stayUpdated .footerInfo .contact ul li {
         font-size: 0.8rem;
@@ -518,15 +557,15 @@ footer {
     // HEADER SECTION
     .header {
         .h1Container {
-            min-width: 250px;
+            width: 40%;
             h1 {
-                font-size: 2.7rem;
+                font-size: 2.6rem;
             }
         } 
     } 
 
      .headerContainer .social {
-        right: -55px;
+        right: -15px;
      }
 
 .headerContainer .imgHeader {
@@ -536,6 +575,25 @@ footer {
 // HAND CRAFTED SECTION
 .handCraftedFlex {
     align-items: center;
+}
+
+// FALL TRENDS SECTION
+.fallTrends .wrapper {
+    .fallTrendsText {
+
+        p {
+            margin: 20px 0;
+        }
+    }
+}
+
+// VEGAN LEATHER SECTION
+.veganLeather .wrapper {
+    .veganLeatherText {
+        p {
+            margin: 20px 0;
+        }
+    }
 }
 
 // STAY UPDATED SECTION
@@ -562,14 +620,18 @@ footer {
             align-self: flex-end;
             width: 100%;
 
+            h1 {
+                line-height: 70px;
+            }
+
             span {
                 display: block;
             }
         }
         .imgHeader {
             width: 60%;
-            min-width: 450px;
-            position: unset;
+            min-width: 405px;
+            top: -110px;
             
         }
     }
@@ -759,9 +821,10 @@ footer {
    
     // HEADER SECTION
     .header .imgHeader {
-        width: 70%;
-        top: 0px;
-        left: 0px;
+        width: 60%;
+        min-width: 350px;
+        top: -15px;
+        left: -35px;
     }
 
     // FOOTER SECTION
@@ -793,8 +856,11 @@ footer {
     }
 
     .header .imgHeader {
-        width: 100%;
-        min-width: 320px;;
+        width: 75%;
+        min-width: 320px;
+        top: -10px;
+        left: -15px;
+
     }
 
     // FOOTER SECTION
